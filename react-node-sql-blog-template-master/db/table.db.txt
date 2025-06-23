@@ -1,0 +1,32 @@
+Host: 127.0.0.1
+-- Generation Time: Oct 02, 2021 at 10:36 PM
+-- Server version: 10.4.19-MariaDB
+-- PHP Version: 7.4.19
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+-- --------------------------------------------------------
+
+-- Database: mern-blog
+
+-- --------------------------------------------------------
+
+-- Table structure for table tbl_posts
+
+CREATE TABLE tbl_posts (
+  post_id int(11) NOT NULL,
+  post_author varchar(50) NOT NULL,
+  post_featurephoto mediumtext NOT NULL,
+  post_title varchar(256) NOT NULL,
+  post_date int(11) NOT NULL,
+  post_views int(11) NOT NULL,
+  post_content varchar(4096) NOT NULL,
+  post_tag varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
