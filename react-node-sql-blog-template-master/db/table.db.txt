@@ -1,14 +1,5 @@
-
-
-
--- --------------------------------------------------------
-
 -- Database: mern-blog
-
--- --------------------------------------------------------
-
 -- Table structure for table tbl_posts
-
 CREATE TABLE tbl_posts (
   post_id int(11) NOT NULL,
   post_author varchar(50) NOT NULL,
